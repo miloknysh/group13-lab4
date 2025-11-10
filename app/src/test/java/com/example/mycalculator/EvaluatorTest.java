@@ -86,5 +86,9 @@ public class EvaluatorTest {
 
         //test that should fail
 
+        actual = eval.evaluate("2.5-3.5");
+        expected = "1.0";
+        assertEquals(expected, actual);
+    }
 
 }
