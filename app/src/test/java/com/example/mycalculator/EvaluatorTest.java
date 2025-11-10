@@ -62,7 +62,7 @@ public class EvaluatorTest {
         //tests that should pass
 
         String actual = eval.evaluate("2.7-3.4");
-        String expected = "-0.7";
+        String expected = "-0.70";
         assertEquals(expected, actual);
 
         actual = eval.evaluate("50.43-10.57");
