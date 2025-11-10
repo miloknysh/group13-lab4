@@ -54,6 +54,37 @@ public class EvaluatorTest {
 
     }
 
+    public void evaluateSubtraction() throws Exception {
+
+        Evaluator eval = new Evaluator();
+
+        //tests that should pass
+
+        String actual = eval.evaluate("2.7-3.4");
+        String expected = "-0.7";
+        assertEquals(expected, actual);
+
+        actual = eval.evaluate("50.43-10.57");
+        expected = "39.86";
+        assertEquals(expected, actual);
+
+        actual = eval.evaluate("-5.74-17.32");
+        expected = "-23.06";
+        assertEquals(expected, actual);
+
+        actual = eval.evaluate("-80-1");
+        expected = "-81";
+        assertEquals(expected, actual);
+
+        actual = eval.evaluate("31.9-6.38");
+        expected = "25.52";
+        assertEquals(expected, actual);
+
+        actual = eval.evaluate("-74-3");
+        expected = "-77";
+        assertEquals(expected, actual);
+
+        //test that should fail
 
 
 }
