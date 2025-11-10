@@ -54,6 +54,7 @@ public class EvaluatorTest {
 
     }
 
+    @Test
     public void evaluateSubtraction() throws Exception {
 
         Evaluator eval = new Evaluator();
